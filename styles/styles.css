@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -46,19 +53,45 @@ ul {
 }
 
 .section-intro {
-  background: #24263b;
+  position: relative;
   height: calc(100vh - 10rem);
 }
-
-.home__main {
+.bg-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 
+.bg-vid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 34, 53, 0.85);
+  z-index: -1;
+}
+.section-intro__inner {
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Dancing Script";
   font-size: 6rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
+  display: inline-block;
 }
 
 .heading-one {
@@ -95,6 +128,11 @@ ul {
   font-weight: 500;
   color: #fff;
   font-size: 2.2rem;
+  transition: all 0.5s;
+}
+
+.navigation__nav-link:hover {
+  color: #ff2c2c;
 }
 
 .description-box__heading-one {
@@ -118,15 +156,21 @@ ul {
   border-radius: 5rem;
   font-size: 2rem;
   background: transparent;
+  transition: all 0.3s;
+}
+
+.description-box__action:hover {
+  background: #ff4a57;
+  cursor: pointer;
 }
 
 .footer {
   background: #23263a;
   padding: 10rem 0;
+  text-align: center;
 }
 
 .footer__para {
-  text-align: center;
   margin-top: 5.4rem;
   margin-bottom: 7.8rem;
   font-size: 2rem;
@@ -155,6 +199,13 @@ ul {
 .about__head {
   margin-bottom: 4rem;
 }
+.about__img {
+  height: 100%;
+}
+
+.about__img img {
+  width: 40rem;
+}
 
 .about__para,
 .about__info-text {
@@ -177,6 +228,12 @@ ul {
   color: #ff6913;
   font-size: 1.7rem;
 }
+
+.contact {
+  background: #1f2235;
+  padding: 10rem;
+}
+
 .contact__group {
   display: flex;
   justify-content: space-between;
@@ -184,11 +241,65 @@ ul {
 .contact__item {
   width: 49%;
 }
-
-.contact__form input {
-  width: 100%;
+.contact__form {
+  margin: 4rem 0;
 }
-
+.contact__form input,
 textarea {
   width: 100%;
+  border: none;
+  background: #23263a;
+  color: #fff;
+  padding: 2rem 3.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.6rem;
+  font-size: 1.8rem;
+}
+
+.contact__form input::placeholder,
+textarea::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.contact__action {
+  background: #ff4a57;
+  padding: 1.8rem 6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.info {
+  background: #1f2235;
+}
+
+.info-box {
+  padding: 2.5rem;
+  padding-left: 2rem;
+  border-radius: 0.6rem;
+  background: #23263a;
+  width: 32.5rem;
+  display: flex;
+}
+
+.info-box__content {
+  margin-left: 2rem;
+}
+
+.info-box__title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.info-box__text {
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.info__inner {
+  display: flex;
+  justify-content: space-between;
 }

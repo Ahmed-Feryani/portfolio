@@ -16,7 +16,7 @@
   <body class="home">
     <header class="navigation">
       <nav class="navigation__nav container container--big">
-        <div class="logo">ahmed</div>
+        <a href="/"><div class="logo">ahmed</div></a>
 
         <ul class="navigation__nav-list">
           <li class="navigation__nav-item">
@@ -26,27 +26,108 @@
             <a class="navigation__nav-link" href="/about.html">about</a>
           </li>
           <li class="navigation__nav-item">
+            <a class="navigation__nav-link" href="/resume.html">resume</a>
+          </li>
+          <li class="navigation__nav-item">
             <a class="navigation__nav-link" href="/contact.html">contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="home__main">
+    <main class="">
       <section class="title cvh">
-        <span>about</span>
+        <span>contact</span>
+      </section>
+
+      <section class="info">
+        <div class="container container--big">
+          <div class="info__inner">
+            <div class="info-box">
+              <div class="info-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#ff4a57"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+                  />
+                </svg>
+              </div>
+              <div class="info-box__content">
+                <p class="info-box__title">Locate us</p>
+                <p class="info-box__text">ahmed.feryani.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#ff4a57"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"
+                  />
+                </svg>
+              </div>
+              <div class="info-box__content">
+                <p class="info-box__title">Locate us</p>
+                <p class="info-box__text">ahmed.feryani.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  width="24px"
+                  fill="#ff4a57"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 1C7.59 1 4 4.59 4 9c0 5.57 6.96 13.34 7.26 13.67l.74.82.74-.82C13.04 22.34 20 14.57 20 9c0-4.41-3.59-8-8-8zm0 19.47C9.82 17.86 6 12.54 6 9c0-3.31 2.69-6 6-6s6 2.69 6 6c0 3.83-4.25 9.36-6 11.47zm-1.53-9.3L8.71 9.4l-1.42 1.42L10.47 14l6.01-6.01-1.41-1.42z"
+                  />
+                </svg>
+              </div>
+              <div class="info-box__content">
+                <p class="info-box__title">Locate us</p>
+                <p class="info-box__text">ahmed.feryani.dev@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="contact">
         <div class="container container--big">
           <form action="" class="contact__form">
             <div class="contact__group">
-              <div class="contact__item"><input type="text" /></div>
-              <div class="contact__item"><input type="text" /></div>
+              <div class="contact__item">
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div class="contact__item">
+                <input type="email" placeholder="Your Email" />
+              </div>
             </div>
             <div class="contact__group">
-              <input type="text" />
+              <input type="text" placeholder="Your Subject" />
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="contact__action">Send Message</button>
           </form>
         </div>
       </section>
@@ -54,7 +135,9 @@
     <footer class="footer">
       <div class="container container--med">
         <div class="footer__inner">
-          <div class="logo ch">ahmed</div>
+          <a href="/">
+            <div class="logo ch">ahmed</div>
+          </a>
 
           <p class="footer__para">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
