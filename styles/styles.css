@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  display: flex;
+}
+
+.col-1-2 {
+  flex-basis: 50%;
+}
+
+.container {
+  margin: auto;
+}
+
+.container--big {
+  max-width: 116rem;
+}
+
+.container--med {
+  max-width: 83.5rem;
+}
+
+.cvh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ch {
+  display: flex;
+  justify-content: center;
+}
+
+.section-intro {
+  background: #24263b;
+  height: calc(100vh - 10rem);
+}
+
+.home__main {
+}
+
+.logo {
+  font-family: "Dancing Script";
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.heading-one {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+}
+.heading-three {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.navigation {
+  background: #1f2235;
+}
+.navigation__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
+
+.navigation__nav-list {
+  display: flex;
+}
+
+.navigation__nav-item:not(:last-child) {
+  margin-right: 4rem;
+}
+.navigation__nav-link,
+.navigation__nav-link:link,
+.navigation__nav-link:visited {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.description-box__heading-one {
+  margin-bottom: 2.5rem;
+}
+
+.description-box__para {
+  color: #dfdfdf;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  font-weight: 300;
+  max-width: 54rem;
+  margin-bottom: 5rem;
+}
+
+.description-box__action {
+  border-color: #ff4a57;
+  color: #fff;
+  font-weight: 500;
+  padding: 1.3rem 4rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  background: transparent;
+}
+
+.footer {
+  background: #23263a;
+  padding: 10rem 0;
+}
+
+.footer__para {
+  text-align: center;
+  margin-top: 5.4rem;
+  margin-bottom: 7.8rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #fff;
+}
+
+.footer__copy {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.footer__copy span {
+  color: #ff4a57;
+  padding: 0 0.7rem;
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about {
+  background: #252425;
+  padding: 13rem 0;
+}
+
+.about__head {
+  margin-bottom: 4rem;
+}
+
+.about__para,
+.about__info-text {
+  line-height: 2.6rem;
+  color: #dfdfdf;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  height: 32rem;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #1f2235;
+}
+
+.about__info-title {
+  color: #ff6913;
+  font-size: 1.7rem;
+}
+.contact__group {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__item {
+  width: 49%;
+}
+
+.contact__form input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
